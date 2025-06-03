@@ -16,6 +16,7 @@ local options = {
       "ruff_organize_imports",
     },
     json = { "prettier" },
+    markdown = { "prettier", "markdownlint-cli2" },
   },
 
   format_on_save = {
