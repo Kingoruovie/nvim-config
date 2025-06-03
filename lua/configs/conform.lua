@@ -18,12 +18,6 @@ local options = {
     json = { "prettier" },
   },
 
-  formatters = {
-    ruff_format = {
-      prepend_args = { "--line-length", "80" },
-    },
-  },
-
   format_on_save = {
     -- These options will be passed to conform.format()
     timeout_ms = 500,
