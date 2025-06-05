@@ -5,7 +5,7 @@ local dap_python = require "dap-python"
 dapui.setup {}
 
 -- Python setup with the nvim-python-dap
-dap_python.setup "python3"
+dap_python.setup "/home/kingoruovie/.local/share/nvim/mason/packages/debugpy/venv/bin/python3"
 
 -- Need to open our dapui for deug
 dap.listeners.after.event_initialized["dapui_config"] = function()
