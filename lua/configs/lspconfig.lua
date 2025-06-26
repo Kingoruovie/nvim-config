@@ -3,7 +3,7 @@ require("nvchad.configs.lspconfig").defaults()
 local servers = {
   "html",
   "cssls",
-  "emmet-ls",
+  "emmet_ls",
   "tailwindcss",
   "ts_ls",
   "pyright",
