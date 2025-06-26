@@ -17,12 +17,22 @@ local options = {
     },
     json = { "prettier" },
     markdown = { "prettier", "markdownlint-cli2" },
+    http = { "kulala" },
+    rest = { "kulala" },
   },
 
   format_on_save = {
     -- These options will be passed to conform.format()
     timeout_ms = 500,
     lsp_fallback = true,
+  },
+
+  formatters = {
+    kulala = {
+      command = "kulala-fmt",
+      args = { "format", "$FILENAME" },
+      stdin = false,
+    },
   },
 }
 

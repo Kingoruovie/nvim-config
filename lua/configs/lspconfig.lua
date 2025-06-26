@@ -14,6 +14,8 @@ local servers = {
   "harper_ls",
   "bashls",
   "marksman",
+  "eslint_lsp",
+  "kulala_ls",
 }
 vim.lsp.enable(servers)
 

@@ -1,8 +1,8 @@
 local lint = require "lint"
 lint.linters_by_ft = {
-  python = { "ruff", "mypy" },
-  javascript = { "eslint_d" },
-  typescript = { "eslint_d" },
+  python = { "ruff" },
+  javascript = { "eslint" },
+  typescript = { "eslint" },
   css = { "stylelint" },
   html = { "stylelint" },
   markdown = { "markdownlint" },
