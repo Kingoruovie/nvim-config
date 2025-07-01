@@ -16,6 +16,7 @@ local servers = {
   "marksman",
   "eslint_lsp",
   "kulala_ls",
+  "fish_lsp",
 }
 vim.lsp.enable(servers)
 
