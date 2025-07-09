@@ -1,11 +1,15 @@
 local dap = require "dap"
 local dapui = require "dapui"
 local dap_python = require "dap-python"
+local dap_go = require "dap-go"
 
 dapui.setup {}
 
 -- Python setup with the nvim-python-dap
 dap_python.setup "/home/kingoruovie/.local/share/nvim/mason/packages/debugpy/venv/bin/python3"
+
+-- Golang
+dap_go.setup()
 
 -- Need to open our dapui for deug
 dap.listeners.after.event_initialized["dapui_config"] = function()
