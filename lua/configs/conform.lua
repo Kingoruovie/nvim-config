@@ -19,7 +19,6 @@ local options = {
     markdown = { "prettier", "markdownlint-cli2" },
     http = { "kulala" },
     rest = { "kulala" },
-    go = { "gofmt", "goimports" },
   },
 
   format_on_save = {

@@ -48,12 +48,21 @@ return {
       "nvim-neotest/nvim-nio",
       "rcarriga/nvim-dap-ui",
       "mfussenegger/nvim-dap-python",
-      "leoluz/nvim-dap-go",
       "theHamsta/nvim-dap-virtual-text",
     },
     config = function()
       require "configs.dap-setup"
     end,
+  },
+  {
+	  'mrcjkb/rustaceanvim',
+	  version = '^6', -- Recommended
+	  lazy = false, -- This plugin is already lazy
+	  ["rust-analyzer"] = {
+	  cargo = {
+		allFeatures = true
+	  }
+	  }
   },
   {
     "MeanderingProgrammer/render-markdown.nvim",
